@@ -1,0 +1,137 @@
+.c_Container {
+    background: #EEF2F7;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+}
+.c_Container h1 {
+    padding-left: 40px;
+    font-family: sans-serif;
+    color: rgb(7, 23, 53);
+    
+}
+.c_Container span{
+    display: block;
+    width: 20rem;
+    height: 5px;
+    margin-left: 40px;
+    border-radius: 2px;
+    fill: rgb(69, 20, 95);
+    background-color: rgb(69, 20, 95);
+    transition: 2s ease-in-out;
+}
+.c_Container div div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.Courses{
+    margin-top: 10px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 25px;
+}
+.Courses div{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding-top: 6rem;
+    text-align: center;
+    width: 15rem;
+    height: 15rem;
+    background: white;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fundamentalCourses div:first-child{
+    background-image: url("images/course/a.jpg");
+}
+.fundamentalCourses div:nth-child(2){
+    background-image: url("images/course/b.jpg");
+}
+.fundamentalCourses div:nth-child(3){
+    background-image: url("images/course/c.jpg");
+}
+.fundamentalCourses div:nth-child(4){
+    background-image: url("images/course/d.jpg");
+}
+.fundamentalCourses div:nth-child(5){
+    background-image: url("images/course/e.jpg");
+}
+.fundamentalCourses div:nth-child(6){
+    background-image: url("images/course/f.jpg");
+}
+.fundamentalCourses div:nth-child(7){
+    background-image: url("images/course/g.jpg");
+}
+.fundamentalCourses div:nth-child(8){
+    background-image: url("images/course/h.jpg");
+    color: bisque;
+}
+.fundamentalCourses div:nth-child(9){
+    background-image: url("images/course/r.jpg");
+}
+.fundamentalCourses div:nth-child(9) a{
+    color:black;
+}
+
+
+/* Certification Courses styles */
+.certificationCourse div:first-child{
+    background-image: url("images/course/i.jpg");
+}
+.certificationCourse div:nth-child(2){
+    background-image: url("images/course/j.jpg");
+}
+.certificationCourse div:nth-child(3){
+    background-image: url("images/course/k.png");
+}
+.certificationCourse div:nth-child(4){
+    background-image: url("images/course/l.jpg");
+}
+.certificationCourse div:nth-child(5){
+    background-image: url("images/course/m.jpg");
+}
+.certificationCourse div:nth-child(6){
+    background-image: url("images/course/n.jpg");
+}
+.certificationCourse div:nth-child(7){
+    background-image: url("images/course/o.jpg");
+}
+.certificationCourse div:nth-child(8){
+    background-image: url("images/course/p.jpg");
+}
+
+@media (max-width:1040px) {
+    .Courses{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:840px) {
+    .Courses{
+        margin-left: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .c_Container h1 {
+        padding-left:10px;
+    }
+    .c_Container span{
+        margin-left: 10px;
+    }
+
+}
+@media (max-width:580px) {
+    .Courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+.Courses div:hover{
+    filter: grayscale(0%);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;  
+}

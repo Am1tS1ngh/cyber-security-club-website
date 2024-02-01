@@ -1,0 +1,101 @@
+:root {
+    --primary: rgb(47, 130, 255);
+    --light: #EEEEEE;
+    --dark: #212121;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.container {
+    max-width:1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* newsletter styles start */
+.newsletter{
+    background-color: rgba(0, 0, 0, 0.95);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("images/course/head-ga0f2118f9_1280.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+.newsletter form{
+    margin:2px auto;
+    width: 380px;
+    max-width:100%;
+    position: relative
+}
+.newsletter #title{
+    text-align: center;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    color: #bbbbbb
+}
+.newsletter #title span:first-child{
+    color: greenyellow;
+}
+.newsletter #title span:last-child{
+    color: #f9004d;
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+
+}
+.newsletter form button{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+    border-radius: 30px;
+}
+
+@media (max-width: 600px){
+    .newsletter form{
+        width: 55vw;
+    }
+    .newsletter #title{
+        font-size: 5vw;
+        padding-right: 0vw;
+    }
+}
+@media (max-width: 450px) {
+    .newsletter form input:first-child{
+        display: block;
+        padding: 14px;
+    }
+    .newsletter form button{
+        display: block;
+        margin: 5px auto;
+        position: static;
+    }
+}
+/* newsletter styles end */

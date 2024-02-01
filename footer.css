@@ -1,0 +1,115 @@
+#drct, #hodname, #prsdnt_name, #vice_prsdnt_name, #scrtry_name, #vice_scrtry_name, #wb_name, #trsrr_name,#mob1,#mob2{
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+#drct a, #hodname a,#prsdnt_name a, #vice_prsdnt_name a, #scrtry_name a, #vice_scrtry_name a, #wb_name a,#trsrr_name a,#mob1 a,#mob2 a{
+    color: rgb(47, 130, 255);
+    transition: 0.3s ease-in-out;
+}
+
+.footer .container{
+    max-width: 1170px;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 60px 0;
+}
+.footer-col{
+    width: 20%;
+    padding: 0 20px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#fff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(52, 51, 51);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff ;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    transition: 0.5s ease-in-out;
+    background-color: #ffffff;
+}
+
+#director:hover + #drct,#hod:hover + #hodname, #president:hover + #prsdnt_name, #vice_president:hover + #vice_prsdnt_name,#scrtry:hover + #scrtry_name, #vice_scrtry:hover + #vice_scrtry_name, #web_master:hover + #wb_name, #treasurer:hover + #trsrr_name, #cntct1:hover + #mob1,#cntct2:hover + #mob2{
+    display: block;
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media (min-width:960px){
+    .menu-view{
+        display: none;
+    }
+    .menu-view.is-open{
+        display: none;
+    }
+}
+@media (max-width: 610px) {
+    #logo{
+        display: none;
+    }
+    
+}

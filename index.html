@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/cyber.png" type="image/icon">
+    <title>Cyber Club</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        #homepage{
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+        <div class="container">
+            <span id="logo"><img src="/images/cyber.png" alt="logo" height="50px" id="img_logo"></span>
+            <h1>Cyber Security</h1>
+            <div class="menu">
+                <a href="#" class="is-active">Home</a>
+                <a href="/news_letter.html">News Letter</a>
+                <a href="/courses.html">Courses</a>
+                <a href="/resource.html">Resources</a>
+                <a href="#footer">About</a>
+            </div>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        </nav>
+        <div class="menu-view">
+            <a href="#" class="is-active">Home</a>
+            <a href="/news_letter.html">News Letter</a>
+            <a href="/courses.html">Courses</a>
+            <a href="resource.html">Resources</a>
+            <a href="#footer">About Us</a>
+        </div>
+        <div class="home_content">
+            <h1>Cyber Security Club</h1>
+            <div class="box-container">
+            <div class="box mission">
+                <h2 id="msn">Introduction</h2>
+                <p class="par">
+<b>C</b>ybersecurity has become critical to the fabric of any modern business. As breach after breach hits the headlines, it's clear to everyone that organizations need more professionals focused on cybersecurity.<span id="dots">....</span>
+<br/>
+
+<span id="more">The Cybersecurity club will be set with a goal to teach individuals about cybersecurity and help them gain their knowledge necessary to arm themselves against modern-day computer exploits. The club is open to everybody at <b>PIEMR</b> no matter what experience level or major they are.
+
+This club will help start and maintain a culture in the institute which will go a long way in helping students of current and future batches.</span>
+            </p>
+            <button id="myBtn" onclick="myFunction()">Read more</button>
+            </div>
+            <div class="box vision">
+                <h2 id="vsn">Our Aim</h2>
+                <p class="par_aim">
+                    <b>T</b>he club aims to cover different areas related to cyber security like network security, penetration testing, secure coding, cryptography, and reverse engineering.<span id="dots_aim">....</span><br/>
+                    <span id="more_aim">To present interactive demonstrations with vulnerable web applications and make them learn about different tools and resources to look for.<br/>
+                    To demonstrate the experts’ approach to a problem through different platforms like youtube and others.<br>
+                    Help the students master all tools by hands-on session and different competitions.</span>
+                </p>
+                <button id="myBtn_aim" onclick="myFunction_aim()">Read more</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <main id="homepage">
+        <div class="newsletter">
+            <h2 id="title">Get <span>Newsletter</span> to <span>You!</span></h2>
+            <form id="myForm">
+                <input type="email" name="Email" id="mail" placeholder="Enter Your Email" required>
+                <button name="submit" type="submit" onclick="SubForm()">Lets Start</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Head</h4>
+                    <ul>
+                        <li id="director"><a href="#director">Director,PIEMR</a></li>
+                        <li id="drct"><a href="#drct" >Dr. Manojkumar Deshpande</a></li>
+                        <li id="hod"><a href="#hod">HOD,CSE</a></li>
+                        <li id="hodname"><a href="#hodname">Dr. Piyush Choudhary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Faculty Coordinator</h4>
+                    <ul>
+                        <li><a href="#">Devendra Singh</a></li>
+                        <li><a href="#">Monika Verma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Student Coordinator</h4>
+                    <ul>
+                        <li id="president"><a href="#president">president</a></li>
+                        <li id="prsdnt_name"><a href="#">Harsh Tiwari</a></li>
+                        <li id="vice_president"><a href="#vice_president">vice president</a></li>
+                        <li id="vice_prsdnt_name"><a href="#">Shrut jain</a></li>
+                        <li id="scrtry"><a href="#">secretary</a></li>
+                        <li id="scrtry_name"><a href="#">Shailja Mishra</a></li>
+                        <li id="vice_scrtry"><a href="#">vice secretary</a></li>
+                        <li id="vice_scrtry_name"><a href="#">Alefiya Raja</a></li>
+                        <li id="web_master"><a href="#">web masters</a></li>
+                        <li id="wb_name"><a href="#">Amit Singh Patel</a><a href="#">Shikha Khatri</a></li>
+                        <li id="treasurer"><a href="#">treasurer</a></li>
+                        <li id="trsrr_name"><a href="#">Rajat Dubey</a><a href="#">Shubham Kumar</a></li>
+                        <!-- <li><a href="#">contact</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i>
+                    </a>
+                    </div>
+                    <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i>
+                    </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li id="cntct1"><a href="#">Jai Jai Shivam</a></li>
+                        <li id="mob1"><a href="#">&plus; 91-7089483083</a></li>
+                        <li id="cntct2"><a href="#">Utkarsh Goswami</a></li>            
+                        <li id="mob2"><a href="#">&plus; 91-8269181001</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="/homepage.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
